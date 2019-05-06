@@ -2,6 +2,10 @@ export interface AppState {
   loading: boolean;
 }
 
-export function appReducer(state = {}, action) {
+const initialState: AppState = {
+  loading: false,
+};
+
+export function appReducer(state: AppState = initialState, action): AppState {
   return state;
 }
